@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega Delicioso — Hamburguesas al carbón</title>
+  <meta name="description" content="Mega Delicioso: hamburguesas selladas al carbón, directo de la brasa a tu mesa.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#inicio" class="logo">Mega <span>Delicioso</span></a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#proceso">Al carbón</a>
+        <a href="#menu">Menú</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#encuesta">Encuesta</a>
+        <a href="#sucursales">Sucursales</a>
+        <a href="https://wa.me/529993624042" target="_blank" rel="noopener" class="nav-whatsapp" aria-label="Escríbenos por WhatsApp">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4.1.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3 .9.9-2.9-.2-.3c-.9-1.4-1.4-3.1-1.4-4.8 0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.6 8.6-8.3 8.6z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="#contacto" class="nav-cta">Pedir ahora</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <p class="hero-kicker">Selladas sobre brasa viva</p>
+        <h1>Directo del carbón<br>a tu mesa.</h1>
+        <p class="hero-desc">
+          En Mega Delicioso no usamos planchas ni gas. Cada hamburguesa se sella
+          sobre carbón encendido, a fuego real, para que el humo quede en cada mordida.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Ver el menú</a>
+          <a href="#proceso" class="btn btn-ghost">Cómo la asamos</a>
+        </div>
+        <dl class="hero-stats">
+          <div>
+            <dt>18</dt>
+            <dd>sucursales con parrilla propia</dd>
+          </div>
+          <div>
+            <dt>100%</dt>
+            <dd>carbón vegetal, sin gas</dd>
+          </div>
+          <div>
+            <dt>7 min</dt>
+            <dd>de la brasa a la bandeja</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-media">
+        <img
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80"
+          alt="Hamburguesa jugosa recién salida de la parrilla de carbón"
+          class="hero-img"
+        >
+        <img
+          src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=500&q=80"
+          alt="Brasas de carbón encendidas"
+          class="hero-img-small"
+        >
+      </div>
+    </section>
+
+    <div class="grate-divider" aria-hidden="true"></div>
+
+    <!-- ===== PROCESO ===== -->
+    <section class="process" id="proceso">
+      <div class="section-head">
+        <h2>Así llega el humo a tu hamburguesa</h2>
+        <p>Cuatro pasos, sin atajos. Es la razón por la que no usamos plancha.</p>
+      </div>
+
+      <ol class="process-list">
+        <li>
+          <span class="process-num">01</span>
+          <h3>Selección de la carne</h3>
+          <p>Molienda fresca del día, con un punto de grasa pensado para resistir el fuego directo sin secarse.</p>
+        </li>
+        <li>
+          <span class="process-num">02</span>
+          <h3>Carbón encendido</h3>
+          <p>Carbón vegetal de encino, encendido 40 minutos antes de abrir, hasta llegar a brasa pareja.</p>
+        </li>
+        <li>
+          <span class="process-num">03</span>
+          <h3>Sellado a fuego directo</h3>
+          <p>La carne se sella sobre la parrilla de barras, dejando marca y capturando el humo del carbón.</p>
+        </li>
+        <li>
+          <span class="process-num">04</span>
+          <h3>Armado y mesa</h3>
+          <p>Pan tostado en el mismo calor de la parrilla, armado al momento y directo a tu bandeja.</p>
+        </li>
+      </ol>
+    </section>
+
+    <div class="grate-divider" aria-hidden="true"></div>
+
+    <!-- ===== MENU ===== -->
+    <section class="menu" id="menu">
+      <div class="section-head">
+        <h2>El menú</h2>
+        <p>Todo pasa por el carbón antes de llegar a tu bandeja.</p>
+      </div>
+
+      <div class="menu-filters" id="menuFilters">
+        <button class="filter-btn is-active" data-filter="todas">Todas</button>
+        <button class="filter-btn" data-filter="clasicas">Clásicas</button>
+        <button class="filter-btn" data-filter="especiales">Especiales</button>
+        <button class="filter-btn" data-filter="vegetarianas">Vegetarianas</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+
+        <article class="menu-card" data-category="clasicas">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80" alt="Hamburguesa clásica con queso cheddar">
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>La Original</h3>
+              <span class="price">$89</span>
+            </div>
+            <p>Carne 150g, queso cheddar, cebolla asada al carbón, lechuga y salsa de la casa.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="especiales">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=700&q=80" alt="Hamburguesa doble con tocino ahumado">
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Doble Brasa</h3>
+              <span class="price">$129</span>
+            </div>
+            <p>Doble carne 300g, tocino ahumado al carbón, queso manchego fundido y cebolla crispy.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="especiales">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Carne sellada directamente sobre el fuego">
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Costeña Picante</h3>
+              <span class="price">$115</span>
+              </div>
+            <p>Carne 180g, chile morrón asado, jalapeño al carbón, queso pepper jack y mayo chipotle.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="vegetarianas">
+          <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?auto=format&fit=crop&w=700&q=80" alt="Hamburguesa vegetariana con vegetales asados">
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Vegetal al Carbón</h3>
+              <span class="price">$99</span>
+            </div>
+            <p>Base de champiñón y garbanzo, pimientos asados directo en la parrilla, queso de cabra.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="clasicas">
+          <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=700&q=80" alt="Hamburguesa con papas a la francesa">
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>La Sencilla</h3>
+              <span class="price">$75</span>
+            </div>
+            <p>Carne 150g, queso amarillo, pepinillos y mostaza. Acompañada de papas a la francesa.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="especiales">
+          <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=700&q=80" alt="Hamburguesa gourmet con ingredientes premium">
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>La Ahumada</h3>
+              <span class="price">$135</span>
+            </div>
+            <p>Carne 200g madurada, queso gouda ahumado, cebolla morada al carbón y salsa BBQ de la casa.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="grate-divider" aria-hidden="true"></div>
+
+    <!-- ===== OPINIONES ===== -->
+    <section class="testimonials" id="opiniones">
+      <div class="section-head">
+        <h2>Lo que dicen en las mesas</h2>
+      </div>
+
+      <div class="testimonial-carousel">
+        <div class="testimonial-track" id="testimonialTrack">
+          <blockquote class="testimonial">
+            <p>Se nota la diferencia del carbón desde el primer bocado. El sabor a humo no se disimula con salsa, es real.</p>
+            <footer>— Renata O., Mérida</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>Pedí la Doble Brasa y el tocino ahumado se robó la hamburguesa. Vamos casi cada semana.</p>
+            <footer>— Iván C., Ciudad de México</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>La opción vegetariana también pasa por la parrilla y se nota: los pimientos llegan con marca de fuego.</p>
+            <footer>— Paola S., Guadalajara</footer>
+          </blockquote>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+      </div>
+    </section>
+
+    <div class="grate-divider" aria-hidden="true"></div>
+
+    <!-- ===== ENCUESTA ===== -->
+    <section class="survey" id="encuesta">
+      <div class="section-head">
+        <h2>Ayúdanos a mejorar</h2>
+        <p>Una pregunta rápida, se guarda tu voto y ves el resultado al instante.</p>
+      </div>
+
+      <div class="survey-card">
+        <form id="surveyForm">
+          <p class="survey-question">¿Cuál es tu hamburguesa favorita al carbón?</p>
+          <div class="survey-options" id="surveyOptions">
+            <label class="survey-option">
+              <input type="radio" name="favorita" value="La Original">
+              <span>La Original</span>
+            </label>
+            <label class="survey-option">
+              <input type="radio" name="favorita" value="Doble Brasa">
+              <span>Doble Brasa</span>
+            </label>
+            <label class="survey-option">
+              <input type="radio" name="favorita" value="Costeña Picante">
+              <span>Costeña Picante</span>
+            </label>
+            <label class="survey-option">
+              <input type="radio" name="favorita" value="Vegetal al Carbón">
+              <span>Vegetal al Carbón</span>
+            </label>
+            <label class="survey-option">
+              <input type="radio" name="favorita" value="La Ahumada">
+              <span>La Ahumada</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Votar</button>
+          <p class="survey-note" id="surveyNote"></p>
+        </form>
+
+        <div class="survey-results is-hidden" id="surveyResults">
+          <h3>Gracias por tu voto</h3>
+          <ul id="surveyResultsList"></ul>
+          <button type="button" class="btn btn-ghost" id="surveyReset">Votar de nuevo</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="grate-divider" aria-hidden="true"></div>
+
+    <!-- ===== SUCURSALES ===== -->
+    <section class="locations" id="sucursales">
+      <div class="section-head">
+        <h2>Encuéntranos</h2>
+        <p>Todas nuestras sucursales tienen parrilla de carbón propia, no compartida.</p>
+      </div>
+
+      <div class="locations-grid">
+        <div class="location-card">
+          <h3>Mérida — Centro</h3>
+          <p>Calle 60 #497, Centro<br>Lun–Dom · 13:00–23:00</p>
+        </div>
+        <div class="location-card">
+          <h3>Ciudad de México — Condesa</h3>
+          <p>Av. Michoacán 88<br>Lun–Dom · 13:00–00:00</p>
+        </div>
+        <div class="location-card">
+          <h3>Guadalajara — Chapultepec</h3>
+          <p>Av. Chapultepec 312<br>Lun–Dom · 13:00–23:30</p>
+        </div>
+        <div class="location-card">
+          <h3>Monterrey — San Pedro</h3>
+          <p>Av. Gómez Morín 550<br>Lun–Dom · 13:00–23:00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="final-cta" id="contacto">
+      <div class="final-cta-media">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80" alt="Fuego de carbón encendido">
+      </div>
+      <div class="final-cta-body">
+        <h2>¿Ya te dio hambre?</h2>
+        <p>Pide en línea o resérvanos una mesa. La parrilla ya está encendida.</p>
+        <form class="cta-form" id="ctaForm" novalidate>
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <span class="form-error" id="errorNombre"></span>
+          </div>
+          <div class="form-row">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" required>
+            <span class="form-error" id="errorTelefono"></span>
+          </div>
+          <div class="form-row">
+            <label for="sucursal">Sucursal</label>
+            <select id="sucursal" name="sucursal" required>
+              <option value="">Elige una sucursal</option>
+              <option value="merida">Mérida — Centro</option>
+              <option value="cdmx">Ciudad de México — Condesa</option>
+              <option value="gdl">Guadalajara — Chapultepec</option>
+              <option value="mty">Monterrey — San Pedro</option>
+            </select>
+            <span class="form-error" id="errorSucursal"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Solicitar llamada</button>
+          <p class="form-success" id="formSuccess" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="logo">Mega <span>Delicioso</span></p>
+        <p>Hamburguesas selladas al carbón desde 2014.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explorar</h4>
+        <a href="#proceso">Al carbón</a>
+        <a href="#menu">Menú</a>
+        <a href="#sucursales">Sucursales</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/529993624042" target="_blank" rel="noopener">WhatsApp: 999 362 4042</a>
+        <a href="mailto:hola@megadelicioso.mx">hola@megadelicioso.mx</a>
+      </div>
+    </div>
+    <p class="footer-legal">© <span id="anioActual"></span> Mega Delicioso. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
+  <a
+    href="https://wa.me/529993624042?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Mega%20Delicioso"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chatea con nosotros por WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5s-.6-1.5-.9-2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4.1.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3 .9.9-2.9-.2-.3c-.9-1.4-1.4-3.1-1.4-4.8 0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.6 8.6-8.3 8.6z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
